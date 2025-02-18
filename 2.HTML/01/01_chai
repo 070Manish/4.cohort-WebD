@@ -1,0 +1,7 @@
+keyboard shortcut for html
+
+1. ctrl+! -> boiler plate of html
+2. h1+tab -> <h1></h1>
+3. p>lorem10+tab -> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, at.</p>
+4. h2>lorem10+tab -> <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, at.</h2 >
+5. ctrl + / -> for comment

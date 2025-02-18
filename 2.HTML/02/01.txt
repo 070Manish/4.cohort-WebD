@@ -1,0 +1,99 @@
+1. Mark Down file
+    # + spce -> for big heading
+    - test -> bullet points
+
+
+2.PRD -> Product requirement doc
+
+3.HTML
+
+use MDN.
+
+1.<!DOCTYPE html>-> tell browser we are using html
+2.<html lang="en"> and html lang is in HTML
+3.<head>-> conatin meta data. like title 
+4.<body> -> idhr pura code likhenge
+
+-> ctrl + / -> FOR COMMENT
+
+->meta name="viewport"
+    ->viewport-> mtlb kisme open ho rh, laptop, phone etc
+
+<b> -> bold tag 
+<strong> -> bold tag jaise hi work krtta
+
+<br/> -> Line break mtlb next line me jayega
+<hr> -> horizontal line -> line khichte
+<small> -> make sentance small
+
+1.
+ul -> unordered list
+li -> list item
+short cut ul>li*3
+
+2. ol -> ordered list
+
+3. dt -> description list
+
+4. Link and navigation 
+
+<a href="" target="">
+<a> -> link tag
+href -> adress
+target -> which page same page or another page
+
+-> link -> tag
+    rel-> in link tag
+    we use in head tag.
+
+5.Images
+    <img src="./manish.jpg" >
+    ->alt-> if image is not loading then we will show msg in alt tag
+    ->width -> size in pixel
+
+    clickable image->
+    <a href="https://chaicode.com">
+        <img src="./manish.jpg" alt="" />
+    </a>
+
+6.Table
+    <table> ->
+    <tr colspan="2"> -> table row
+    <th colspan="2"> -> table column
+    <td> -> 
+
+    htmltable-> search and make same table
+
+7.Forms->Ex->Registration Form
+    <form action="backend.com/api/joManHo" method="POST">
+        <label for="Name">Name</label>
+        <input type="text" placeholder="Name" />
+        <button type="submit">Submit</buttonbutton>
+    </form>
+
+8.Semantics->
+    This all are replacement of div for instead of using dev all over we use particular div type instead of div
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <section></section>
+    <article></article>
+    <aside></aside>
+    <footer></footer>
+
+9.Multimedia->
+    use MDN for Video
+    <video muted src="" poster="" width=""></video>
+
+    import video from youtube
+
+    <iframe src="videofromyoutube" frameborder="0" width="500px"></iframe>
+
+    study global attributes and local attributes.
+
+
+10.Juice Center
+    nav-> navigation bar
+    header section or hero section -> A hero section is a prominent area at the top of a webpage that aims to capture the visitor’s attention and convey the main message or value proposition of the website.
+    main section -> actual material.It contains the primary content of the page and is usually distinct from the hero section
+    footer-> last part of website

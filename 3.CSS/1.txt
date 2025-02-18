@@ -1,0 +1,216 @@
+HTML->Skeleton
+CSS->Skeleton ko skin provide beautification krti
+JavaScript-> Brain of your skelton and skin.
+
+-----CSS----Cascading Style Sheet
+
+button tag 
+    -> chrome -> will give different button
+    -> brave -> will give diffrent button 
+    but we can overide default color and size style of button using CSS.
+
+CSS is nothing but overidding default styling
+    CSS-> properties with value
+
+Three Ways too use CSS
+1.Inline -> tag me use kr or lena ussi element pr .
+    ex-><button style="background-color: red;">Click Me</button>
+
+2.Internal -> head me global style using style tag
+    syntax -> 
+    <style>
+        Selector 
+        {
+            <prop>:<value>
+            <prop>:<value>
+            <prop>:<value>
+        }
+    </style>
+
+    ex; 
+    <style>
+        button
+        {
+            background-color: blue;
+        }
+    </style>
+
+3.External CSS ->
+    Apn ek seprate css file banate .
+    we have to import seprate file
+    using-> <link rel="stylesheet" href="3.css">
+    we canm import multiple file
+    ->
+
+
+0.Tag-> Whole School
+    button
+    {
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+    }
+
+Attributes:
+1.Class-  we use "class" for to group tag.
+    syntax:
+    .<className>
+    {
+        <prop>:<value>
+        <prop>:<value>
+        <prop>:<value>
+    }
+    
+    ex:     
+    .my-class-1
+    {
+        color : red;
+        text-decoration: underline;
+    }
+   Note-> single tag can be part of multiple class.
+
+2.ID -> id can be assign to single tag only its unique but class can have two or more tags.
+    Syntax:
+    #<IDName>
+    {
+        <prop>:<value>
+        <prop>:<value>
+        <prop>:<value>
+    }
+
+    ex:
+    #btn-1
+    {
+        color : pink;
+
+    }
+
+
+Analogy for Tag , Class, ID
+    Tag-> StudentS
+    Class->Grouping
+    ID-> Unique Student
+
+Cascading-work based on Priority(Weight)
+    ->to decide priority it use Specificity Algo\
+    -> mtlb jitna specific hoga utni priority high hogi.
+
+    Priority->Inline>ID>Class>Tag
+
+Elements:
+    1.Block Level Elements
+        -> browser ka pura ka pura ek block or line lete.
+        ex:tags
+        1.div
+        2.p
+        3.h1
+        4.h6
+        5.br
+        6.section
+        7.footer
+        8.article
+        9.hr
+        10.header
+        11.nav
+        12.ul
+        13.li
+
+    2.Inline Level Elements
+        ->Inline me me depend krta conetent kitna hai like ex."Hello" rh to usko jitni jgh lggegi utne occupy krega and dusre ke liye space banayega.
+        -> ek ke baad ek ata
+        ex:tags
+        1.Inline
+        2.Span
+        3.img
+        4.button
+        5.a
+        6.bold
+        7.input
+        8.b
+        9.em
+
+    ->ye sb tags ka default hai either it will be inline or block
+    so wee can change it in css property using 
+    ex:button is inline but we can coinvert it in block Level
+    ex:
+        button
+        {
+            display : block;
+        }
+
+        p
+        {
+            display : inline;
+        }
+
+----------Flex Box-----------
+                    ->flexible Box
+                    ->div parent hua uske andr ke element child hue. to apn flex box se element kaise place kr skte ish liye flex-box use krte
+         ex: Div is block level element.
+            jb display: block or inline use kr rh. to apn div ko hila rhe. 
+        
+    -> But using flexBox apn div ke bacho ke hila skte.
+    
+    HTML
+    ->head
+    ->body->
+            ->p
+            ->Div
+                ->iske jo bache hai unke sth khelenge apn using flexBox
+
+    Padding->mtlb andr se kitna space dena hai content ko
+            ex: tumhre rooom me tum diwaro se kitne dur ho thats padding
+    Margin-> Mtlb do box ke bich ka space
+            ex: tumhre ghar se tumhre padosio ka distance is margin.
+
+--Terminologies--
+    1.main axis->left to right jata hai
+                -> start from M start point
+                -> end at M end.
+                ->Main Size = Mstart to Mend
+
+    2.cross axis -> top to bottom
+                 -> it starts from C start 
+                 -> end at C end.
+                 ->Main Size = Cstart to Cend
+
+    Notes->in .parent
+    1.By default-> All the child elements lied on main axis.
+    2.If apn flex use kr rh "display: flex" to sbhi parent ke child element main axis par aa jayenge by default.
+    3.justify conetent-> Main axis pr khel skte 
+    4.align-tems -> se apn cross asix pr khel skte.
+    5.order-> se apn childs ki priority decide kr skte 
+    6.flex-direction-> se apn direction change kr denge pure parent ko rotate kr denga
+
+
+Homework:
+1.Basic of CSS->Blog
+2.Specificity Algo(Cascading Master)->Blog
+3.Projects-> 3-4 sections(sundar sunadr)->like netflix login page section
+4.Flex-Box + cheatSeat -> Blog
+
+
+-----------Grid--------
+    1D- use flex Box
+        ex: vertical or horizontal 
+        like -> side bar or menu bar
+
+    2D - use Grid
+        ex: vertical and horizontal
+        like -> Matrix
+        components of grid -> grid line, grid container, grid component.
+
+        syntax : display: grid;
+
+------------Box Model--------------
+    box-sizzing:  
+        1.border-box->mtlb given height and width me hi hoga sbkch padding, marging and border
+        2.content-box -> mtlb given height me sirf content rhega baki jgh add hoti jayegi border,padding and marging ke liye
+    1.Div
+    2.Element
+    3.Padding
+    4.Margin
+    5.Border
