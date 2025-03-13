@@ -1,6 +1,6 @@
 
 let display = document.getElementById("cal-input");
-let buttons = document.querySelectorAll(".calculator");
+let buttons = document.querySelectorAll(".calculator button");
 let lastAnswer = "";
 
 buttons.forEach(button => 
