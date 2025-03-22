@@ -22,3 +22,4 @@ export default db;
 //MongoDB
 //userID: maninagpure070
 //password: jCVAkMBG3Y5mjKhl
+//to acess db always use await bcz db is on another continent
